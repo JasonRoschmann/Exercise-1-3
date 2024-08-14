@@ -1,0 +1,55 @@
+.modal {
+    display: none; /* Versteckt das Modal standardmäßig */
+    position: fixed; /* Fixiert das Modal über dem Seiteninhalt */
+    z-index: 1000; /* Stellt sicher, dass das Modal über anderen Elementen liegt */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Ermöglicht das Scrollen bei großen Inhalten */
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparentes schwarzes Overlay */
+}
+
+/* Modal-Inhalt */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Zentriert das Modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Breite des Modals */
+    max-width: 600px; /* Maximale Breite des Modals */
+    border-radius: 8px; /* Runde Ecken */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Schatteneffekt */
+}
+
+/* Schließen-Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style für den Button, der das Modal öffnet */
+.modal-button {
+    margin-top: 5%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-button:hover {
+    background-color: #0056b3;
+}

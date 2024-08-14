@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar mit Video-Hintergrund</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="styles/slider.css">
+</head>
+<header>
+    <nav class="navbar" id="navbar">
+        <div class="logo">Meine Webseite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#services">Dienstleistungen</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Dein Browser unterstützt kein HTML5-Video.
+        </video>
+    </div>
+    
+    <div class="contentText">
+        <h1>Brand New Content</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, error. Laudantium ea pariatur reiciendis non mollitia expedita facilis sunt voluptates provident harum possimus, minima eius ducimus dicta quasi, numquam quibusdam?</p>
+    </div>
+
+        <!-- Button zum Öffnen des Modals -->
+<button id="openModalBtn" class="modal-button">Modal öffnen</button>
+
+<!-- Das Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal-Inhalt -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Modal Überschrift</h2>
+        <p>Dies ist der Inhalt des Modals. Hier kannst du beliebigen Text oder HTML einfügen.</p>
+        <p>Du kannst das Modal schließen, indem du auf das &times; oben rechts klickst.</p>
+    </div>
+
+</div>
+
+    <div class="container">
+      <img src="assets/OIP (1).jpeg" alt="Bild 1" class="imgForContent">
+         <ul class="listingText">
+            <li>Marketing</li>
+            <li>Consulting</li>
+            <li>Finance</li>
+            <li>Investment</li>
+            <li>Experience</li>
+         </ul>
+        
+    </div>
+
+    <div class="mediaContent" style="text-align: center; font-size: 50px; color: azure;">
+        <h2>Media Content</h2>
+    </div>
+
+    <div class="mediaText" style="flex: auto;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt assumenda totam quae quos illo doloremque laborum. Minus rem quisquam facere a. Rerum, doloremque iste dolore cumque quod nisi aperiam sapiente?</p>
+    </div>
+
+    <div class="mediaGalarie" style="text-align: center; font-size: 50px; color: azure;">
+        <h2>Media Gallery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolore at cumque velit fugit! Aliquam consequuntur eveniet reiciendis ad impedit enim itaque consequatur rem, neque at temporibus accusamus aliquid? Aliquid!</p>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="assets/10137769.jpg" alt="Bild 1">
+        </div>
+        <div class="slides">
+            <img src="assets/11020363.jpg" alt="Bild 2">
+        </div>
+        <div class="slides">
+            <img src="assets/6199336.jpg" alt="Bild 3">
+        </div>
+    </div>
+    
+
+
+
+
+    
+
+ 
+
+</body>
+<script type="module" src="functions/navbar.js"></script>
+<script type="module" src="functions/slideshow.js"></script>
+<script type="module" src="functions/modal.js"></script>
+</html>
